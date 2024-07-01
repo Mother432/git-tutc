@@ -6,16 +6,16 @@ void padString(char *str, int totalWidth)
     int len = strlen(str);
     if (len >= totalWidth)
     {
-        printf("%s\n", str); 
+        printf("%s\n",str); 
     } 
     else
     {
         int numStars = totalWidth - len;
-        for (int i = 0; i < numStars; i++)
+        for (int i=0;i<numStars;i++)
         {
           printf("*");
          }
-        printf("%s\n", str);
+        printf("%s\n",str);
     }
 }
 
